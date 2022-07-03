@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+}
+.header-div{
+  background-color: blue;
+  height: 70px;
+  display: flex;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.391);
+  margin-bottom: 30px;
+}
+.header-div h1{
+  color: white;
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.createNote-main-div{
+  margin-top: 30px;
+  text-align: center;
+  margin: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.createNote-div{
+  width: 500px;
+  padding: 20px;
+  box-shadow: 1px 1px 1px 1px rgb(173, 165, 165);
+  border-radius: 10px;
+  text-align: left;
+}
+.createNote-div input{
+  height: 50px;
+  width: 300px;
+  outline: none;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  padding: 10px;
+}
+.createNote-div textarea{
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: medium;
+  font-weight: 500;
+  padding: 10px;
+  width: 400px;
+  height: 180px;
+}
+.createNote-div button{
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(30, 182, 30);
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  /* background-color: rgba(182, 178, 178, 0.746); */
+  position: relative;
+  top:40px;
+  left: 30px;
+  box-shadow: 1px 1px 1px 1px rgb(168, 165, 165);
+
+}
+.createNote-div button:hover{
+  background-color: green;
+  cursor: pointer;
+  color: white;
+}
+.note-main-div{
+  margin-top: 40px;
+  margin-left: 20px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+
+}
+.note-div{
+  box-shadow: 1px 1px 1px 1px rgb(190, 184, 184);
+  width: 300px;
+  border-radius: 10px;
+  height: 200px;
+  padding: 10px;
+  margin:10px 10px;
+}
+.note-div h5{
+  font-size: medium;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 10px;
+}
+.note-div p{
+  font-size: medium;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+
+.note-div button{
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(182, 30, 53);
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  /* background-color: rgba(182, 178, 178, 0.746); */
+  position: relative;
+  top:105px;
+  left: 230px;
+  box-shadow: 1px 1px 1px 1px rgb(168, 165, 165);
+
+}
+.note-div button:hover{
+  background-color: rgb(244, 24, 24);
+  cursor: pointer;
+  color: white;
+}
