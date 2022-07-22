@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2vmax;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+nav{
+  height: 4vmax;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+}
+.left{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.left > a{
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+  font-size: 2vmax;
+}
+.mid{
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+.mid > a{
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid > a:hover{
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+.right{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right > img{
+  width: 2.5vmax;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.home{
+  height: 90vh;
+  background-image: linear-gradient(rgb(230,221,255),rgb(184,184,223));
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width:700px) {
+  #rightContainer > img{
+    display: none;
+  }
+}
+.container{
+  width: 50%;
+}
+#rightContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+#rightContainer > img{
+  margin-right: 10vmax;
+  filter: drop-shadow(0 0 10px black);
+}
+#leftContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax;
+  justify-content: center;
+}
+#leftContainer p{
+  margin: 25px 0px;
+}
+#leftContainer h1{
+  font-size: 4vmax;
+}
+#leftContainer h2{
+  margin-left: 2px;
+  font-size: 2vmax;
+
+}
+#leftContainer > button{
+  width: 10vmax;
+  padding: 0.8vmax;
+  border:none;
+  border-radius: 2vmax;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#leftContainer > button:hover{
+  background-color: rgb(170, 23, 53);
+}
+
+/* --------------------------------------products css----------------------------- */
+#products{
+  height: 80vw;
+}
+#products > h1{
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2vmax;
+  width: 25vw;
+  padding: 1vmax;
+  border-bottom: 5px solid crimson;
+}
+.productsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 65%;
+  max-width: 85vw;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;  
+}
+.product{
+  height: 33vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin:0vmax 0.5vmax;
+}
+.product > img{
+  width: 20vmax;
+}
+.product > h4{
+  margin: 2px;
+}
+.product:hover{
+  transform: translateY(-15px);
+}
+
+footer{
+  background-color: rgba(0, 0, 0, 0.858);
+  display: flex;
+  color: white;
+  padding: 2vmax;
+}
+.leftFooter{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > p{
+  margin-top: 15px;
+  text-align: center;
+}
+.leftFooter > div > img{
+  width: 40%;
+  margin-top:15px ;
+  cursor: pointer;
+}
+.leftFooter > div{
+  text-align: center;
+}
+.midFooter{
+  width: 60%;
+}
+.rightFooter{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightFooter > h4{
+  color: white;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+.rightFooter > a{
+text-decoration: none;
+color: white;
+margin: 5px 0px;
+}
+.midFooter{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.midFooter > h1{
+  font-size: x-large;
+  font-weight: bolder;
+  color: crimson;
+
+  margin-bottom: 15px;
+}
+.midFooter  p{
+  margin-bottom: 15px;
+}
